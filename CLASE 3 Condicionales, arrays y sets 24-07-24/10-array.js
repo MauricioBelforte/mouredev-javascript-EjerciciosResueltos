@@ -115,7 +115,7 @@ console.log(myArray)
 
 
 /// length
-//- Para devolver la cantidad de elementos del array
+//- Para devolver la cantidad de elementos del array usamos la propiedad lenght
 console.log();
 console.log("lenght");
 

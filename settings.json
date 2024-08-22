@@ -1,0 +1,123 @@
+// Respaldo de la configuracion de todo el entorno de Visual Studio utilizando la Extension One Dark Pro
+// Incluidos los colores de los comentarios usando la Extension Better Comments
+
+{
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+  
+   "workbench.colorCustomizations": {
+    "activityBar.background": "#17171a",  // Barra de actividades
+    "sideBar.background": "#18181c",      // Barra lateral
+    "editor.background": "#1a1a1d",       // Fondo del editor
+    "statusBar.background": "#121212",    // Barra de estado
+    "titleBar.activeBackground": "#111111", // Barra de título activa
+    "titleBar.inactiveBackground": "#1f1f1f", // Barra de título inactiva
+  
+    "editor.foreground": "#d4d4d4",       // Texto del editor
+    "editorLineNumber.foreground": "#858585", // Números de línea
+    "editorCursor.foreground": "#ffffff", // Cursor
+    
+    "editor.inactiveSelectionBackground": "#0a9800d3", // Selección inactiva
+
+    "tab.activeBackground": "#212225",    // Fondo de la solapa activa
+    "tab.inactiveBackground": "#131315",  // Fondo de las solapas inactivas
+    "tab.border": "#151515",              // Borde de las solapas
+    "tab.activeBorder": "#b0651d",        // Borde de la solapa activa
+    "tab.hoverBackground": "#3a3d41",     // Fondo de la solapa al pasar el ratón
+    "tab.unfocusedHoverBackground": "#0f0e0e", // Fondo de la solapa desenfocada al pasar el ratón
+    "editorGroupHeader.tabsBackground": "#121212", // Fondo de la barra de pestañas
+
+    "editor.lineHighlightBackground": "#2f2127", // Color de fondo de la línea actual
+    "editor.lineHighlightBorder": "#1a1a20", // Color del borde de la línea actual
+    
+    "editor.wordHighlightBackground": "#1b2e5c8c", // Color de fondo al posicionarse en una palabra un solo click
+    "editor.selectionHighlightBackground": "#212338c3",  // Color de fondo de las palabras que incluyen las palabras seleccionadas al hacer doble click
+    "editor.selectionHighlightBorder": "#302c32ec",  // Cambia #ff0000 por el color que prefieras
+    "editor.wordHighlightStrongBackground": "#3b392671", // Color al hacer clic en una declaración de variable
+
+    "editor.selectionBackground": "#484e6a", // Color de fondo de la selección de línea
+    
+},
+
+"better-comments.tags": [
+
+
+    
+    {
+        "tag": "!",
+        "color": "#c0392b",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+    },
+    {
+        "tag": "?",
+        "color": "#1abc9c",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+    },
+    {
+        "tag": "//",
+        "color": "#474747",
+        "strikethrough": true,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+    },
+    {
+        "tag": "todo",
+        "color": "#FF8C00",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+    },
+    {
+        "tag": "*",
+        "color": "#4d697f",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+    },
+    {
+        "tag": "/",
+        "color": "#6eb0d5",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": true,
+        "italic": false
+    },
+    {
+        "tag": ".",
+        "color": "#2a698c",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+    },
+    {
+        "tag": "-",
+        "color": "#BCB5C9",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+    }
+]
+
+
+
+}
