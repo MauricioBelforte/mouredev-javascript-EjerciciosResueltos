@@ -1,4 +1,7 @@
 # mouredev-javascript-EjerciciosResueltos
 
-Es necesario instalar node.js
-Y para ejecutar el codigo de JavaScript dentro de Visual Studio instalamos la Extension Code Runner
+Para trabajar se uso Visual Studio Code 
+Es necesario instalar node.js 
+Instalar la Extension Code Runner para ejecutar el codigo de JavaScript.
+Instalar la Extension One Dark Pro para el entorno visual.
+Instalar la Extension Better Comments para ver los comentarios con colores.
