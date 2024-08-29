@@ -4,6 +4,8 @@
 * https://www.twitch.tv/videos/2206228701?t=00h16m02s
 */
 
+/// Estructuras de datos
+
 /// Array
 
 /// Declaración

@@ -4,6 +4,8 @@
 * https://www.twitch.tv/videos/2206228701?t=00h16m02s
 */
 
+/// Estructuras de datos
+
 /// Set
 //- La principal diferencia entre set y array es que set no admite duplicados.
 //- Por eso no se puede buscar por la posicion. Cada elemento es unico
