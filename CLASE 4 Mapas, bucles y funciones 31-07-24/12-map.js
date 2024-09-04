@@ -61,7 +61,7 @@ console.log();
 console.log("Metodo get() Sirve para obtener el valor");
 console.log(myMap.get("name"))
 // Si no encuentra la clave devuelve undefined
-console.log(myMap.get("surname")) 
+console.log(myMap.get("surname"))
 
 
 
@@ -90,7 +90,7 @@ console.log();
 console.log("Propiedades");
 
 console.log();
-console.log("keys() Devuelve solo clas claves");
+console.log("keys() Devuelve solo las claves");
 console.log(myMap.keys())
 
 /// values

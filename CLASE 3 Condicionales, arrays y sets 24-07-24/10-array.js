@@ -104,11 +104,11 @@ console.log(myArray)
 //- Elimina el primer elemento del array y ademas lo devuelve
 console.log();
 console.log("shift");
-console.log(myArray.shift()) 
+console.log(myArray.shift())
 console.log(myArray)
 
 
-/// unshift 
+/// unshift ()
 //- Sirve para agregar uno o mas elementos al principio array
 console.log();
 console.log("unshift");
@@ -135,7 +135,7 @@ console.log(myArray)
 
 
 
-/// slice
+/// slice()
 //- Sirve para devolver una copia de una porcion del arreglo, no modifica el original
 console.log();
 console.log("slice");
@@ -149,7 +149,7 @@ console.log(myNewArray)
 
 
 
-/// splice
+/// splice()
 //- Sirve para eliminar elementos de un arreglo, modifica el original. Ademas se puede agregar un elemento
 console.log();
 console.log("splice");
@@ -162,3 +162,21 @@ myArray = ["Brais", "Moure", "mouredev", 37, true]
 
 myArray.splice(1, 2, "Nueva entrada") // A partir de la posicion 1 eliminamos 2 elementos y de paso agregamos un elemento nuevo en el tercer parametro
 console.log(myArray)
+
+
+
+/// Funcion map()
+
+//- La función map() se utiliza para iterar sobre los elementos de un arreglo y aplicar una función a cada uno de ellos, creando un nuevo arreglo con los resultados.
+//- Es especialmente útil cuando necesitas transformar todos los elementos de un arreglo de una manera específica sin tener que usar un bucle for.
+
+console.log();
+console.log("Funcion map()");
+let numeros = [1, 2, 3, 4];
+let numerosMultiplicados = numeros.map(function (cadaElementoDelArreglo) {
+    return cadaElementoDelArreglo * 2;
+});
+
+console.log(numerosMultiplicados); // [2, 4, 6, 8]
+
+//En este caso, map() toma cada elemento del arreglo numeros, lo multiplica por 2 y devuelve un nuevo arreglo con los resultados.
