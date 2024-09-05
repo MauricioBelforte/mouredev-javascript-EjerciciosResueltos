@@ -1,13 +1,18 @@
 /*
-Clase 5 en vídeo | 07/08/2024
-Objetos, desestructuración, propagación y clases
-https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958
+/ Clase 5 en vídeo | 07/08/2024
+/ Objetos, desestructuración, propagación y clases
+* https://www.youtube.com/live/SBXEpAx_y_Q?si=Sbqqa2-_eGwsUkH-&t=958
 */
 
-// Clases
+
+/// Clases
+//- Es un objeto complejo, sirve para crear plantillas de objetos
+//- Para mi es un generador de objetos de un tipo definido anteriormente
+// Se usa Upper CamelCase como los componentes de react
 
 class Person {
 
+    // Se suele llamar por convencion el mismo nombre del parametro que la propiedad del objeto
     constructor(name, age, alias) {
         this.name = name
         this.age = age
@@ -16,20 +21,38 @@ class Person {
 
 }
 
-// Sintaxis
+console.log();
+
+/// Sintaxis
+console.log("Creamos dos objetos a partir de la misma clase");
+console.log();
 
 let person = new Person("Brais", 37, "MoureDev")
 let person2 = new Person("Brais", 37, "MoureDev")
 
-console.log(person)
-console.log(person2)
 
+console.log("Vemos que tiene el objeto person : ", person)
+console.log();
+
+console.log("Vemos que tiene el objeto person2 : ", person2)
+
+console.log();
+console.log("Vemos de que tipo es person");
 console.log(typeof person)
 
-// Valores por defecto
+console.log();
+
+
+/// Valores por defecto
+
+console.log();
+
+
+console.log("Creamos la clase DefaultPerson con valores por defecto");
+console.log();
 
 class DefaultPerson {
-
+    //- Agregamos valores por defecto al constructor, en los parametros, por si queremos crear objetos new con algunos argumentos o ninguno
     constructor(name = "Sin nombre", age = 0, alias = "Sin alias") {
         this.name = name
         this.age = age
@@ -38,20 +61,46 @@ class DefaultPerson {
 
 }
 
+
+console.log("Creamos una instancia de la clase DefaultPerson y le pasamos solo 2 argumentos");
 let person3 = new DefaultPerson("Brais", 37)
 
 console.log(person3)
 
-// Acceso a propiedades
+console.log();
 
+
+
+
+
+/// Acceso a propiedades
+
+console.log("Accesoa propiedades");
+console.log();
+console.log("Accedemos al alias de person3 de esta manera person3.alias");
 console.log(person3.alias)
+console.log();
+
+console.log("Accedemos al alias de person3 de otra manera person3['alias']");
 console.log(person3["alias"])
+console.log();
+
 
 person3.alias = "MoureDev"
 
+console.log("Asignamos un valor a person3.alias='Mouredev' ");
 console.log(person3.alias)
 
-// Funciones en clases
+console.log();
+
+
+
+/// Funciones en clases
+
+console.log();
+console.log("Funciones de clases, para mi metodos de la clase");
+console.log();
+
 
 class PersonWithMethod {
 
@@ -67,13 +116,28 @@ class PersonWithMethod {
 
 }
 
+console.log("Creamos una instancia de la clase PersonWithMethod ");
 let person4 = new PersonWithMethod("Brais", 37, "MoureDev")
+console.log();
+
+console.log("Llamamos al metodo de la clase walk");
 person4.walk()
 
-// Propiedades privadas
+console.log();
+
+
+
+/// Propiedades privadas
+//- Se colocan con # delante de la variable
+//- Solo la clase tiene visibilidad de esa propiedad
+
+console.log();
+console.log("Propiedades privadas #");
+console.log();
+
 
 class PrivatePerson {
-
+    //-Es necesario definirla de antemano, en cambio las otras solo las creamos como this.
     #bank
 
     constructor(name, age, alias, bank) {
@@ -91,13 +155,36 @@ class PrivatePerson {
 
 let person5 = new PrivatePerson("Brais", 37, "MoureDev", "IBAN123456789")
 
-// No podemos acceder
-// console.log(person5.bank) 
-// person5.bank = "new IBAN123456789" // bank no es #bank
-
+console.log("Creamos una instancia de la clase PrivatePerson y vemos si existe #bank ");
 console.log(person5)
+console.log();
 
-// Getters y Setters
+console.log("Vemos si podemos imprimir person5.bank");
+console.log(person5.bank)
+// No podemos acceder
+console.log();
+
+
+
+person5.bank = "new IBAN123456789" // bank no es #bank
+console.log("Asignamos un valor a la propiedad bank a ver si la modifica ");
+console.log();
+
+console.log("Vemos que hay en el objeto person5: ", person5)
+console.log("Si bien se agrego un valor a bank no es la propiedad privada #bank");
+
+
+console.log();
+
+
+
+/// Getters y Setters
+console.log();
+console.log("Obtenemos y establecemos los valores con get y set");
+console.log();
+
+console.log("Creamos una clase GetSetPerson con todas sus propiedades privadas usando #");
+console.log();
 
 class GetSetPerson {
 
@@ -117,6 +204,12 @@ class GetSetPerson {
         return this.#name
     }
 
+    /* Esto es para probar si se modifico la propiedad privada con set bank   
+      get bank() {
+          return this.#bank
+      }
+    */
+
     set bank(bank) {
         this.#bank = bank
     }
@@ -125,18 +218,32 @@ class GetSetPerson {
 
 person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
 
+console.log("Creamos una instancia de GetSetPerson y vemos que tiene");
 console.log(person6)
+console.log();
+
+console.log("Consultamos el valor del name con person6.name");
 console.log(person6.name)
+//- El get si nos permite poder acceder con el punto a la variable privada
+
+
 
 person6.bank = "new IBAN123456789"
+// console.log(person6.bank); // Para probar esta linea hay que tocar la propiedad get bank que esta comentada
+
+console.log();
+
+
+
 
 /*
-Clase 6 en vídeo | 15/08/2024
-Clases (continuación) y manejo de errores
-https://www.twitch.tv/videos/2225058195?t=00h16m42s
+/ Clase 6 en vídeo | 15/08/2024
+/ Clases (continuación) y manejo de errores
+* https://www.twitch.tv/videos/2225058195?t=00h16m42s
 */
 
-// Herencia
+
+/// Herencia
 
 class Animal {
 
@@ -183,7 +290,7 @@ let myFish = new Fish("MoureFish", 10)
 myFish.swim()
 myFish.sound()
 
-// Métodos estáticos
+/// Métodos estáticos
 
 class MathOperations {
 
