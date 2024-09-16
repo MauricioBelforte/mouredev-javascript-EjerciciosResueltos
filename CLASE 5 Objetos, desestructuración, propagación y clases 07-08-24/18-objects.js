@@ -255,9 +255,9 @@ console.log(person5.name)
 
 
 const coche = {
-  marca: 'Toyota',
-  modelo: 'Corolla',
-  año: 2020
+    marca: 'Toyota',
+    modelo: 'Corolla',
+    año: 2020
 };
 
 const cantidadDePropiedades = Object.keys(coche).length;
